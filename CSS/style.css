@@ -1,11 +1,19 @@
+html{
+    overflow:hidden;
+}
 body{
-    background-color: #8cd2f5;
+    background-color: #c495d891;
     display:flex;
     flex-direction:column;
 }
-#compteur, #boutonPrincipal {
-    text-align: center;
+header{
+    display:flex;
+    justify-content:center;
 }
-#compteur{
-
+section{
+    display:flex
+    flex-direction:column;
+}
+#boutonPrincipal{
+    width:50%;
 }
