@@ -13,21 +13,19 @@ setInterval(appendImage, 1000);
 
 function myTimer() {
   const d = new Date();
-
-
 }
 
 function appendImage() {
   var img = document.createElement('img');
-  console.log("aa");
   img.setAttribute('src', 'images/capote_fond.png');
   img.classList.add('capote');
   img.style.left = Math.floor(Math.random() * 100) + 'vw';
   rainDiv.appendChild(img);
-  setInterval(deleteImage(img), 1000000);
+  setTimeout(() => {
+    deleteImage(img)
+  }, 20_000);
 }
 
 function deleteImage(img) {
-  console.log("delete")
   rainDiv.removeChild(img);
 }
