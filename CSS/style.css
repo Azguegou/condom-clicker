@@ -10,6 +10,9 @@ header{
     display:flex;
     justify-content:center;
 }
+#capoteMini{
+    width:10%;
+}
 section{
     display:flex
     flex-direction:column;
