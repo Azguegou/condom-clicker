@@ -11,7 +11,7 @@ header{
     justify-content:center;
 }
 #capoteMini{
-    width:10%;
+    width:5%;
 }
 section{
     display:flex;
@@ -19,4 +19,20 @@ section{
 }
 #boutonPrincipal{
     width:50%;
+}
+
+.capote {
+    position: fixed;
+    animation-duration: 20s;
+    animation-name: slidedown;
+    animation-fill-mode: forwards;
+    height: 100px;
+    width: 100px;
+    top: 0;
+}
+
+@keyframes slidedown {
+    to {
+      top: 120%;
+    }
 }
