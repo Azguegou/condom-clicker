@@ -2,20 +2,29 @@ html{
     overflow:hidden;
 }
 body{
-    background-color: #c495d891;
+    background-color: #c1e6e8;
     display:flex;
     flex-direction:column;
 }
 header{
     display:flex;
     justify-content:center;
+    align-items:center;
+    font-family:Century Gothic;
+    font-size:200%;
 }
 #capoteMini{
+    margin-top:1%;
     width:5%;
+    height:5%;
 }
 section{
     display:flex;
     flex-direction:column;
+}
+button{
+    background:none;
+    border:none;
 }
 #boutonPrincipal{
     width:50%;
