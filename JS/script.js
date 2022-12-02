@@ -4,11 +4,6 @@ console.log(condom);
 var compteur = document.getElementById("nbCapotes");
 var valeur = 0;
 var rainDiv = document.getElementById("condomRain");
-var questions = [
-  ["Question1", ["Reponse1", "Reponse2", "Reponse3", "Reponse4"]],
-  ["Question2", ["Reponse1", "Reponse2", "Reponse3", "Reponse4"]],
-  ["Question3", ["Reponse1", "Reponse2", "Reponse3", "Reponse4"]]
-  ]
 
 condom.addEventListener("click", function () {
   valeur++;
@@ -42,12 +37,4 @@ function deleteImage(img) {
 
 function resetCondom() {
   condom.style.width = "30%";
-}
-
-function random(max){
-  return Math.floor(Math.random()*max);
-}
-
-function impro(){
-  
 }
