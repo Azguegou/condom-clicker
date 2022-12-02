@@ -12,15 +12,33 @@
 <body>
     <header id="compteur">
         <h2><span id="nbCapotes">0 </span> Capotes </h2><img src="images/capote_durex.png" id="capoteMini" />
-        <h3><span id="capoteParSec">0 </span>Capote par Seconde</h3>
+        <h3><span id="capoteParSec">0 </span> Capotes par Seconde</h3>
     </header>
-
+    <div id="bg-popup">
+        <div id="popup">
+            <legend id="question" index="">Question</legend>
+            <div class="rep">
+                <input type="radio" id="r1" name="reponse">
+                <label for="r1" class="reponse">Reponse</label>
+            </div>
+            <div class="rep">
+                <input type="radio" id="r2" name="reponse">
+                <label for="r2" class="reponse">Reponse</label>
+            </div>
+            <div class="rep">
+                <input type="radio" id="r3" name="reponse">
+                <label for="r3" class="reponse">Reponse</label>
+            </div>
+            <div class="rep">
+                <input type="radio" id="r4" name="reponse">
+                <label for="r4" class="reponse">Reponse</label>
+            </div>
+            <button id="submit" onclick="verify()">Au revoir</button>
+        </div>
+    </div>
     <div id="condomRain">
         <section>
             <button><img src="images/capote_durex.png" id="boutonPrincipal"></button>
-            <div id="progressBar">
-                <h2>Progression</h2>
-            </div>
         </section>
     </div>
     <div id="conteneur-menu">
