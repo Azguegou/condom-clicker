@@ -18,71 +18,79 @@
     <div id="condomRain">
         <section>
             <button><img src="images/capote_durex.png" id="boutonPrincipal"></button>
-            <div id="progressBar">Progression</div>
+            <div id="progressBar">
+                <h2>Progression</h2>
+            </div>
         </section>
     </div>
     <div id="conteneur-menu">
         <table id="menu">
-            <tr class="item" id="item1">
-                <th rowspan="2"> Image </th>
-                <td> Ruban </td>
-                <td> Niveau : 0 </td>
+            <tr class="upgrade" onclick="upgrade(1)">
+                <td rowspan="2" class="iconeImage"> <img class="icone" src="images/ruban.png" /> </td>
+                <td> <b>Ruban</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item1">
+            <tr>
                 <td> Coût : 50 </td>
                 <td> CPS : 0,1 </td>
             </tr>
-            <tr class="item" id="item2">
-                <th rowspan="2"> Image </th>
-                <td> Boîte de capotes </td>
-                <td> Niveau : 0 </td>
+
+            <tr class="upgrade" onclick="upgrade(2)">
+                <td class="iconeImage" rowspan="2"> <img class="icone" src="images/boite_capotes.png" /> </td>
+                <td> <b>Boîte de capotes</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item2">
-                <td> Coût : 100 </td>
-                <td> CPS : 0,3 </td>
+            <tr>
+            <td> Coût : 100 </td>
+            <td> CPS : 0,3 </td>
             </tr>
-            <tr class="item" id="item3">
-                <th rowspan="2"> Image </th>
-                <td> Cours d'éducation sexuelle </td>
-                <td> Niveau : 0 </td>
+
+            <tr class="upgrade" onclick="upgrade(3)">
+                <td class="iconeImage" rowspan="2"> <img class="icone" src="images/education.png" /> </td>
+                <td> <b>Campagne de sensibilisation</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item3">
+            <tr>
                 <td> Coût : 250 </td>
                 <td> CPS : 0,5 </td>
             </tr>
-            <tr class="item" id="item4">
-                <th rowspan="2"> Image </th>
-                <td> Planning Familial </td>
-                <td> Niveau : 0 </td>
+
+            <tr class="upgrade" onclick="upgrade(4)">
+                <td rowspan="2"> <img class="icone" src="images/planning.png" /> </td>
+                <td> <b>Planning Familial</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item4">
+            <tr>
                 <td> Coût : 500 </td>
                 <td> CPS : 1 </td>
             </tr>
-            <tr class="item" id="item5">
-                <th rowspan="2"> Image </th>
-                <td> Musique de sensibilisation </td>
-                <td> Niveau : 0 </td>
+            
+            <tr class="upgrade" onclick="upgrade(5)">
+                <td rowspan="2"> <img class="icone" src="images/musique.png" /> </td>
+                <td> <b>Musique engagée</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item5">
+            <tr>
                 <td> Coût : 1000 </td>
                 <td> CPS : 3 </td>
             </tr>
-            <tr class="item" id="item6">
-                <th rowspan="2"> Image </th>
-                <td> Item </td>
-                <td> Niveau : 0 </td>
+
+            <tr class="upgrade" onclick="upgrade(6)">
+                <td rowspan="2"> <img class="icone" src="images/triteraphie.png" /> </td>
+                <td> <b>Trithérapie</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item6">
+            <tr>
                 <td> Coût : 2000 </td>
                 <td> CPS : 5 </td>
             </tr>
-            <tr class="item" id="item7">
-                <th rowspan="2"> Image </th>
-                <td> Item </td>
-                <td> Niveau : 0 </td>
+
+            <tr class="upgrade" onclick="upgrade(7)">
+                <td rowspan="2"> <img class="icone" src="images/seringue.png" /> </td>
+                <td> <b>Vaccin</b> </td>
+                <td> Niveau : <span class="niveauUpgrade">0</span> </td>
             </tr>
-            <tr class="item" id="item7">
+            <tr>
                 <td> Coût : 5000 </td>
                 <td> CPS : 10 </td>
             </tr>
