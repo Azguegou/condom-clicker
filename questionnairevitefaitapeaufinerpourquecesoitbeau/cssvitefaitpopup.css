@@ -1,0 +1,36 @@
+#bg-popup{
+    display:none;
+    position:fixed;
+    height:100%;
+    width:100%;
+    background-color:#222222aa;
+    left:0;
+    bottom:0;
+}
+
+#popup{
+    position:absolute;
+    top:20px;
+    right:35%;
+    width:30%;
+    height:30%;
+    padding:50px;
+    background-color:lightblue;
+    border: 1px solid black;
+    border-radius:50px;
+    box-shadow: 2px 1px 15px black;
+}
+
+.rep{
+    margin-left:25%;
+}
+
+#submit{
+    background-color:rgb(77, 158, 185);
+    border-radius:7px;
+    border:0;
+    margin-left:75%;
+    margin-top:40%;
+    width:25%;
+    height:15%;
+}
