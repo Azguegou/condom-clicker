@@ -8,8 +8,13 @@ var rainDiv = document.getElementById("condomRain");
 condom.addEventListener("click", function () {
   valeur++;
   compteur.innerText = valeur;
+  if (valeur % 2 == 0) {
+    condom.setAttribute("src", "images/capote_fond.png");
+  } else {
+    condom.setAttribute("src", "images/capote_durex.png");
+  }
 })
-setInterval(appendImage, 1000);
+setInterval(appendImage, 500);
 
 function myTimer() {
   const d = new Date();
@@ -28,4 +33,8 @@ function appendImage() {
 
 function deleteImage(img) {
   rainDiv.removeChild(img);
+}
+
+function resetCondom() {
+  condom.style.width = "30%";
 }
