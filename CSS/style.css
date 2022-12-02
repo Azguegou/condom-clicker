@@ -19,3 +19,53 @@
 #principal, #conteneur-menu{
     float : left;
 }
+body{
+    background-color:plum;
+    display:flex;
+    flex-direction:column;
+}
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Century Gothic;
+    font-size:200%;
+}
+#capoteMini{
+    margin-top:1%;
+    width:5%;
+    height:5%;
+}
+#condomRain{
+    z-index: 99;
+}
+section{
+    display:flex;
+    flex-direction:column;
+}
+button{
+    background:none;
+    border:none;
+}
+#boutonPrincipal{
+    width:30%;
+    z-index: 1001;
+    position: absolute;
+}
+
+
+.capote {
+    position: fixed;
+    animation-duration: 20s;
+    animation-name: slidedown;
+    animation-fill-mode: forwards;
+    height: 100px;
+    width: 100px;
+    top: 0;
+}
+
+@keyframes slidedown {
+    to {
+      top: 120%;
+    }
+}
