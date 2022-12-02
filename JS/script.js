@@ -6,13 +6,13 @@ var increase = 0;
 var rainDiv = document.getElementById("condomRain");
 var level = document.getElementsByClassName("niveauUpgrade");
 const questions = [
-  ["Question1", ["Reponse11", "Reponse12", "Reponse13", "Reponse14"]],
-  ["Question2", ["Reponse21", "Reponse22", "Reponse23", "Reponse24"]],
-  ["Question3", ["Reponse31", "Reponse32", "Reponse33", "Reponse34"]],
-  ["Question4", ["Reponse41", "Reponse42", "Reponse43", "Reponse44"]],
-  ["Question5", ["Reponse51", "Reponse52", "Reponse53", "Reponse54"]],
-  ["Question6", ["Reponse61", "Reponse62", "Reponse63", "Reponse64"]],
-  ["Question7", ["Reponse71", "Reponse72", "Reponse73", "Reponse74"]],
+  ["Que signifie VIH ?", ["Virus de l'Immuno déficience Humaine", "Vie incroyablement humaine ?", "Vache interne hospitalisée", "Voyage intergalactique hypervitesse"]],
+  ["Parmi ces propositions laquelle est une méthode de protection contre le VIH ?", ["le préservatif", "Le retrait", "La pillule", "stérilet"]],
+  ["Quand a lieu la journée mondiale de la lutte contre le SIDA ?", ["1er décembre", "20 avril", "3 février", "11 novembre"]],
+  ["Dans quel infrastructure peut on se faire dépister ?", ["Laboratoire d'analyse sanguine", "Pharmacie", "boulangerie", "Ecole maternelle"]],
+  ["Quel musique à été reprise pour la cause du sidaction ?", ["Macumba", "Encore un matin", "On fait tourner les serviettes", "Chui dans ma paranoïa"]],
+  ["Qu'est ce que la trithérapie contre le VIH", ["Molécule servant au traitement du SIDA", "Un dinosaure", "la trinité", "Un plan a 3"]],
+  ["Quand le vaccin a-t-il été développé ?", ["Bientôt on espère", "1985", "Dès qu'on a découvert le sida", "2001"]],
 ];
 
 condom.addEventListener("click", function () {
@@ -115,12 +115,57 @@ function verify() {
   for (let i = 0; i < 4; ++i) {
     if (document.getElementById(reponses[i].getAttribute("for")).checked) {
       if (reponses[i].innerText == questions[question.getAttribute("index") - 1][1][0]) {
-        console.log("C'est bon.");
+        alert("Félicitations vous avez eu juste !");
+        valeur += 100;
       } else {
-        console.log("C'est faux.");
+        alert("Mauvaise réponse :(");
+        alert("La bonne réponse était : " + questions[question.getAttribute("index") - 1][1][0]);
       }
       document.getElementById("bg-popup").style.display = "none";
       condom.style.visibility = "visible";
     }
   }
+}
+let keys = {
+  37:"left",
+  38: "up",
+  39: "right",
+  40: "down",
+  65: "a",
+  66: "b",
+
+ 
+};
+
+let konamiCode =["up","up","down","down","left","right","left","right","b","a"];
+
+document.addEventListener("keydown", checkCode, false);
+
+let keyCount=0;
+
+function checkCode(event){
+  //console.log(event.keyCode);
+  let keyPressed= keys[event.keyCode];
+
+  if(keyPressed===konamiCode[keyCount]){
+      keyCount++;
+
+      if(keyCount=== konamiCode.length){
+          cheatCodeActivated();
+          resetKeyState();
+      }
+  }
+  else{
+      resetKeyState();
+  }
+  
+}
+
+function cheatCodeActivated(){
+  valeur += 1000000;
+  alert("Félicitations, vous avez trouvé le code secret et avez débloqué un million de préservatifs.");
+}
+
+function resetKeyState(){
+  keyCount=0;
 }
