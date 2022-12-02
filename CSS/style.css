@@ -1,3 +1,21 @@
-#compteur, #boutonPrincipal {
-    text-align: center;
+#principal{
+    text-align : center;
+}
+
+#menu{
+    border : 2px solid red;
+    text-align : center;
+    border-collapse: collapse;
+}
+
+#item1, #item3, #item5, #item7{
+    background-color : lightpink;
+}
+
+#item2, #item4, #item6{
+    background-color : lightgrey;
+}
+
+#principal, #conteneur-menu{
+    float : left;
 }
